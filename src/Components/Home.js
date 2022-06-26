@@ -16,16 +16,16 @@ const Home = () => {
       .then((data) => setBlog(data[0]));
   }, []);
   return (
-    <div className="m-5 lg:mx-60 shadow-lg">
-      <h1 class="px-5 pt-4 text-3xl font-bold">{blog.title}</h1>
+    <div className="m-5 p-5 lg:mx-36 shadow-lg">
+      <h1 class="px-5 pt-4 text-2xl lg:text-4xl font-bold">{blog.title}</h1>
       <small className="font-bold px-5 text-gray-400">
         Multi-Day Course
         <FontAwesomeIcon className="ml-1" icon={faCircleQuestion} />
       </small>
       <div class="hero">
         <div class="hero-content flex-col lg:flex-row-reverse">
-          <img src={blog.img1} class="w-48 max-w-sm rounded-lg shadow-2xl" />
-          <img src={blog.img2} class="w-48 max-w-sm rounded-lg shadow-2xl" />
+          <img src={blog.img1} class="w-full lg:w-60 max-w-sm rounded-lg shadow-2xl" />
+          <img src={blog.img2} class="w-full lg:w-60 max-w-sm rounded-lg shadow-2xl" />
           <div className="">
             <p class="py-6">{blog.description}</p>
 
@@ -101,11 +101,11 @@ const Home = () => {
                 ></FontAwesomeIcon>
               </button>
               <span className="text-primary">
-                <FontAwesomeIcon className="ml-8 mr-1" icon={faHeart} />
+                <FontAwesomeIcon className="ml-12 mr-1" icon={faHeart} />
                 Save
               </span>
               <span className="text-primary">
-                <FontAwesomeIcon className="ml-8 mr-1" icon={faShare} />
+                <FontAwesomeIcon className="ml-12 mr-1" icon={faShare} />
                 Share
               </span>
             </div>
