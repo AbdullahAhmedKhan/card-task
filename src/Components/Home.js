@@ -22,21 +22,33 @@ const Home = () => {
         Multi-Day Course
         <FontAwesomeIcon className="ml-1" icon={faCircleQuestion} />
       </small>
+
+      {/* Content section  */}
+
       <div class="hero">
         <div class="hero-content flex-col lg:flex-row-reverse">
-          <img src={blog.img1} class="w-full lg:w-60 max-w-sm rounded-lg shadow-2xl" />
-          <img src={blog.img2} class="w-full lg:w-60 max-w-sm rounded-lg shadow-2xl" />
+          <img
+            src={blog.img1}
+            class="w-full lg:w-60 max-w-sm rounded-lg shadow-2xl"
+          />
+          <img
+            src={blog.img2}
+            class="w-full lg:w-60 max-w-sm rounded-lg shadow-2xl"
+          />
           <div className="">
             <p class="py-6">{blog.description}</p>
+
+            {/* User image and Name */}
 
             <div class="avatar">
               <div class="w-6 rounded-full">
                 <img src="https://api.lorem.space/image/face?hash=92310" />
               </div>
-              <span className="ml-2 font-bold text-primary text-sm">
+              <span className="ml-2 mt-1 font-bold text-primary text-sm">
                 {blog.user}
               </span>
             </div>
+
             <div className="mt-1">
               <FontAwesomeIcon
                 className="text-warning text-sm"
@@ -93,7 +105,7 @@ const Home = () => {
               Completed by {blog.learners} learners
             </p>
             <div>
-              <button class="rounded-full btn-sm btn btn-primary normal-case">
+              <button class="px-5 rounded-full btn-sm btn btn-primary normal-case">
                 See Class Schedule
                 <FontAwesomeIcon
                   className="ml-1"
@@ -101,11 +113,17 @@ const Home = () => {
                 ></FontAwesomeIcon>
               </button>
               <span className="text-primary">
-                <FontAwesomeIcon className="ml-12 mr-1" icon={faHeart} />
+                <FontAwesomeIcon
+                  className="ml-5 lg:ml-12 mr-1"
+                  icon={faHeart}
+                />
                 Save
               </span>
               <span className="text-primary">
-                <FontAwesomeIcon className="ml-12 mr-1" icon={faShare} />
+                <FontAwesomeIcon
+                  className="ml-5 lg:ml-12 mr-1"
+                  icon={faShare}
+                />
                 Share
               </span>
             </div>
